@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:groovy-20210614
 RUN \
   # configure the "jhipster" user
   groupadd jhipster && \
