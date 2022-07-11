@@ -54,7 +54,7 @@ jobs:
       - name: 'SETUP: environment'
         id: setup
         uses: ./.github/actions/setup
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/setup-node@v3.4.0
         with:
           node-version: ${{ steps.setup.outputs.node-version }}
       - name: 'SETUP: load npm cache'
@@ -112,7 +112,7 @@ jobs:
       - name: 'SETUP: environment'
         id: setup
         uses: ./generator-jhipster/.github/actions/setup
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/setup-node@v3.4.0
         with:
           node-version: ${{ steps.setup.outputs.node-version }}
       - uses: actions/setup-java@v2
@@ -168,7 +168,7 @@ jobs:
       - name: 'SETUP: environment'
         id: setup
         uses: ./generator-jhipster/.github/actions/setup
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/setup-node@v3.4.0
         with:
           node-version: ${{ steps.setup.outputs.node-version }}
       - uses: actions/setup-java@v2
