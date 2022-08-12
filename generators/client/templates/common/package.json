@@ -11,6 +11,6 @@
     "puppeteer": "10.0.0"
   },
   "dependencies": {
-    "dayjs": "1.10.5"
+    "dayjs": "1.11.5"
   }
 }
