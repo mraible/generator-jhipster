@@ -58,7 +58,7 @@ jobs:
         with:
           node-version: ${{ steps.setup.outputs.node-version }}
       - name: 'SETUP: load npm cache'
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v3.2.3
         with:
           path: |
             ~/.npm
@@ -120,7 +120,7 @@ jobs:
           distribution: 'adopt'
           java-version: ${{ steps.setup.outputs.java-version }}
       - name: 'SETUP: load npm cache'
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v3.2.3
         with:
           path: |
             ~/.npm
@@ -128,7 +128,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ steps.setup.outputs.date }}-cache
           restore-keys: ${{ runner.os }}-node-${{ steps.setup.outputs.date }}
       - name: 'SETUP: load maven cache'
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v3.2.3
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ steps.setup.outputs.date }}
@@ -176,7 +176,7 @@ jobs:
           distribution: 'adopt'
           java-version: ${{ steps.setup.outputs.java-version }}
       - name: 'SETUP: load npm cache'
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v3.2.3
         with:
           path: |
             ~/.npm
@@ -184,12 +184,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ steps.setup.outputs.date }}-cache
           restore-keys: ${{ runner.os }}-node-${{ steps.setup.outputs.date }}
       - name: 'SETUP: load maven cache'
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v3.2.3
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ steps.setup.outputs.date }}
       - name: 'SETUP: load gradle cache'
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v3.2.3
         with:
           path: |
             ~/.gradle/caches
